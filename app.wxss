@@ -1,0 +1,24 @@
+.avatar_date {
+	padding: 10rpx;
+}
+.avatar_date image {
+	width: 60rpx;
+	height: 60rpx;
+	vertical-align: middle;
+}
+
+.avatar_date text {
+	font-size: 32rpx;
+	margin-left: 10rpx;
+	vertical-align: middle;
+}
+.company {
+	margin-left: 10rpx;
+	font-size: 40rpx;
+	font-weight: bold;
+}
+.content {
+	font-size: 32rpx;
+	text-indent: 32rpx;
+	letter-spacing: 5rpx;
+}

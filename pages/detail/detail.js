@@ -1,30 +1,25 @@
-// pages/list/list.js
-// 引入数据
+// pages/detail/detail.js
 let listData = require('../../datas/list-data.js');
-console.log(listData, typeof listData);
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-		listArr: listData.list_data
+		detailObj: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+		console.log(options);
+		let index = options.index;
+		// 更新data中的数据
+		this.setData({
+			detailObj: listData.list_data[index]
+		});
   },
-	
-	toDetail(event){
-		console.log(event);
-		let index = event.currentTarget.dataset.index;
-		wx.navigateTo({
-			url: '/pages/detail/detail?index=' + index,
-		})
-	},
 
   /**
    * 生命周期函数--监听页面初次渲染完成
