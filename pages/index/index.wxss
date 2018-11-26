@@ -29,3 +29,13 @@ page {
 	text-align: center;
 	border-radius: 20rpx;
 }
+
+.btn {
+	width: 300rpx;
+	height: 300rpx;
+	font-size: 24rpx;
+	border-radius: 150rpx;
+	line-height: 300rpx;
+	background: deeppink;
+	margin: 50rpx;
+}
