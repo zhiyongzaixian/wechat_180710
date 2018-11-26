@@ -1,11 +1,14 @@
 // pages/list/list.js
+// 引入数据
+let listData = require('../../datas/list-data.js');
+console.log(listData, typeof listData);
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+		listArr: listData.list_data
   },
 
   /**

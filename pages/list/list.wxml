@@ -1,4 +1,6 @@
 <!--pages/list/list.wxml-->
+<import src='/pages/listTmp/listTmp' />
+
 <view>
 	<swiper indicator-dots indicator-color='greenyellow' indicator-active-color='deeppink'>
 		<swiper-item>
@@ -14,4 +16,7 @@
 			<image src='/images/detail/carousel/04.jpg'></image>
 		</swiper-item>
 	</swiper>
+	<view wx:for='{{listArr}}' wx:key='{{index}}'>
+		<template is='listTmp' data='{{...item}}'/>
+	</view>
 </view>
