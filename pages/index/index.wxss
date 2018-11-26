@@ -1,0 +1,31 @@
+/* pages/index/index.wxss */
+page {
+	height: 100%;
+	background: #8ed145;
+}
+.indexContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.indexImg {
+	width: 200rpx;
+	height: 200rpx;
+	border-radius: 100rpx;
+	margin: 100rpx;
+}
+.userName {
+	font-size: 40rpx;
+	font-weight: bold;
+	margin: 100rpx;
+}
+
+.goStudy {
+	width: 280rpx;
+	height: 80rpx;
+	border: 1rpx solid #eee;
+	font: 28rpx/80rpx '微软雅黑';
+	text-align: center;
+	border-radius: 20rpx;
+}
