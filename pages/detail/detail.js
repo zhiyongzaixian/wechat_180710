@@ -104,6 +104,11 @@ Page({
 			wx.pauseBackgroundAudio()
 		}
 	},
+	handleShare(){
+		wx.showActionSheet({
+			itemList: ['分享到朋友圈', '分享到微博', '分享到qq空间']
+		})
+	},
 
   /**
    * 生命周期函数--监听页面初次渲染完成

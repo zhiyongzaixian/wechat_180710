@@ -12,10 +12,10 @@
 	<view class='collection_share_container'>
 		<view class='collection_share'>
 			<image bindtap='handleCollection' src='{{isCollected?"/images/icon/collection.png":"/images/icon/collection-anti.png"}}'></image>
-			<image src='/images/icon/share.png'></image>
+			<image catchtap='handleShare' src='/images/icon/share.png'></image>
 		</view>
 		<view class='line'></view>
 	</view>
-	<button>转发此文章</button>
+	<button open-type='share'>转发此文章</button>
 	<text class='content'>{{detailObj.detail_content}}</text>
 </view>

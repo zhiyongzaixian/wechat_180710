@@ -1,0 +1,10 @@
+<!--pages/movies/movies.wxml-->
+<view class='moviesContainer' wx:for='{{moviesArr}}' wx:key='{{index}}'>
+	<image class='moviesImg' src='{{item.images.large}}'></image>
+	<view class='moviesInfo'>
+		<text class='movies_name'>{{item.original_title}}</text>
+		<text class='movies_year'>年份: {{item.year}}</text>
+		<text class='movies_dir'>导演: {{item.directors[0].name}}</text>
+	</view>
+	<text class='moviesRating'>{{item.rating.average}}</text>
+</view>
